@@ -1,653 +1,656 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>VIDCASTER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- favicon Icon -->
-  <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
-  <!-- css sheets -->
-  <link rel="stylesheet" href="../css/serieses.css" />
-  <!-- normalize file -->
-  <link rel="stylesheet" href="../css/normalize.css" />
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="../css/all.min.css">
-  <!-- google fonts library -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
-  <!-- JQuery Library -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <meta charset="UTF-8">
+   <title>VIDCASTER</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- favicon Icon -->
+   <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+   <!-- css sheets -->
+   <link rel="stylesheet" href="../css/serieses.css" />
+   <!-- normalize file -->
+   <link rel="stylesheet" href="../css/normalize.css" />
+   <!-- fontawesome -->
+   <link rel="stylesheet" href="../css/all.min.css">
+   <!-- google fonts library -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+   <!-- JQuery Library -->
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
-   <body>
-      <div class="header">
-         <div class="logo">
-            <a href="index.html">VIDCASTER</a>
-         </div>
-         <div class="menu">
-            <div><a href="index.html">HOME</a></div>
-            <div><a href="movies.html">MOVIES</a></div>
-            <div><a href="serieses.html">TV SHOWS</a></div>
-         </div>
+
+<body>
+   <div class="header">
+      <div class="logo">
+         <a href="../index.html">VIDCASTER</a>
       </div>
-      <div class="search">
-         <i class="fas fa-search" id="search-icon"></i>
-         <input type="text" id="mySearch" placeholder="Search for a series.." onkeyup="SearchOperationSerieses()">
+      <div class="menu">
+         <div><a href="../index.html">HOME</a></div>
+         <div><a href="movies.html">MOVIES</a></div>
+         <div><a href="serieses.html">TV SHOWS</a></div>
       </div>
-      <div class="all-serieses">
-         <div class="series" id="aliceinborderland">
-            <a href="serieses/aliceinborderland.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_aliceinborderland.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>ALICE IN BORDERLAND</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="annewithane">
-            <a href="serieses/annewithane.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_annewithane.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>ANNE WITH AN E</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="arrow">
-            <a href="serieses/arrow.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_arrow.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>ARROW</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="barbarians">
-            <a href="serieses/barbarians.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_barbarians.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>BARBARIANS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="clickbait">
-            <a href="serieses/clickbait.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_clickbait.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>CLICK BAIT</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="controlz">
-            <a href="serieses/controlz.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_controlz.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>CONTROL Z</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="cursed">
-            <a href="serieses/cursed.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_cursed.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>CURSED</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="dark">
-            <a href="serieses/dark.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_dark.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>DARK</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="deadlyclass">
-            <a href="serieses/deadlyclass.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_deadlyclass.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>DEADLY CLASS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="frontier">
-            <a href="serieses/frontier.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_frontier.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>FRONTIER</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="lostinspace">
-            <a href="serieses/lostinspace.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_lostinspace.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>LOST IN SPACE</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="love101">
-            <a href="serieses/love101.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_love101.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>LOVE 101</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="moneyheist">
-            <a href="serieses/moneyheist.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_moneyheist.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>MONEY HEIST</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="mrrobot">
-            <a href="serieses/mrrobot.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_mrrobot.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>MR ROBOT</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="paranormal">
-            <a href="serieses/paranormal.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_paranormal.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>PARANORMAL</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="peakyblinders">
-            <a href="serieses/peakyblinders.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_peakyblinders.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>PEAKY BLINDERS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="queenofthesouth">
-            <a href="serieses/queenofthesouth.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_queenofthesouth.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>QUEEN OF THE SOUTH</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="resurrectionertugrul">
-            <a href="serieses/resurrectionertugrul.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_resurrectionertugrul.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>RESURRECTION ERTUGRUL</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="shadowandbone">
-            <a href="serieses/shadowandbone.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_shadowandbone.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SHADOW AND BONE</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="sherlock">
-            <a href="serieses/sherlock.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_sherlock.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SHERLOCK</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="shooter">
-            <a href="serieses/shooter.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_shooter.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SHOOTER</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="snowpiercer">
-            <a href="serieses/snowpiercer.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_snowpiercer.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SNOWPIERCER</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="squidgame">
-            <a href="serieses/squidgame.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_squidgame.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SQUID GAME</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="strangerthings">
-            <a href="serieses/strangerthings.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_strangerthings.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>STRANGER THINGS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="sweettooth">
-            <a href="serieses/sweettooth.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_sweettooth.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>SWEET TOOTH</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thealist">
-            <a href="serieses/thealist.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thealist.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE A LIST</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="theblacklist">
-            <a href="serieses/theblacklist.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_theblacklist.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE BLACK LIST</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thecrown">
-            <a href="serieses/thecrown.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thecrown.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE CROWN</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thegooddoctor">
-            <a href="serieses/thegooddoctor.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thegooddoctor.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE GOOD DOCTOR</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thehundred">
-            <a href="serieses/thehundred.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thehundred.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE HUNDRED</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thelastkingdom">
-            <a href="serieses/thelastkingdom.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thelastkingdom.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE LAST KINGDOM</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="theoriginals">
-            <a href="serieses/theoriginals.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_theoriginals.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE ORIGINALS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thequeensgambit">
-            <a href="serieses/thequeensgambit.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thequeen'sgambit.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE QUEEN'S GAMBIT</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="therain">
-            <a href="serieses/therain.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_therain.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE RAIN</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thesociety">
-            <a href="serieses/thesociety.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thesociety.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE SOCIETY</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thewalkingdead">
-            <a href="serieses/thewalkingdead.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_thewalkingdead.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE WALKING DEAD</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="titans">
-            <a href="serieses/titans.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_titans.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>TITANS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="vikings">
-            <a href="serieses/vikings.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_vikings.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>VIKINGS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="you">
-            <a href="serieses/you.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_you.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>YOU</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="znation">
-            <a href="serieses/znation.html">
-               <div class="poster">
-                  <img src="../imgs/Series-Posters/series_znation.jpg" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>Z NATION</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="breakingbad">
-            <a href="serieses/breakingbad.html">
-               <div class="poster">
-                  <img src="../imgs/series_breakingbad.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>BREAKING BAD</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="brooklynninenine">
-            <a href="serieses/brooklynninenine.html">
-               <div class="poster">
-                  <img src="../imgs/series_brooklynninenine.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>BROOKLYNN NINE-NINE</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="emilyinparis">
-            <a href="serieses/emilyinparis.html">
-               <div class="poster">
-                  <img src="../imgs/series_emilyinparis.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>EMILY IN PARIS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="friends">
-            <a href="serieses/friends.html">
-               <div class="poster">
-                  <img src="../imgs/series_friends.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>FRIENDS</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="gameofthrones">
-            <a href="serieses/gameofthrones.html">
-               <div class="poster">
-                  <img src="../imgs/series_gameofthrones.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>GAME OF THRONES</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="lockeandkey">
-            <a href="serieses/lockeandkey.html">
-               <div class="poster">
-                  <img src="../imgs/series_lockeandkey.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>LOCKE AND KEY</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="loki">
-            <a href="serieses/loki.html">
-               <div class="poster">
-                  <img src="../imgs/series_loki.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>LOKI</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="lupin">
-            <a href="serieses/lupin.html">
-               <div class="poster">
-                  <img src="../imgs/series_lupin.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>LUPIN</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="prisonbreak">
-            <a href="serieses/prisonbreak.html">
-               <div class="poster">
-                  <img src="../imgs/series_prisonbreak.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>PRISON BREAK</div>
-               </div>
-            </a>
-         </div>
-         <div class="series" id="thewitcher">
-            <a href="serieses/thewitcher.html">
-               <div class="poster">
-                  <img src="../imgs/series_thewitcher.png" alt="">
-                  <div class="play-button"><i class="far fa-play-circle"></i></div>
-                  <div class="watch-label">Watch</div>
-               </div>
-               <div class="name">
-                  <div>THE WITCHER</div>
-               </div>
-            </a>
-         </div>
+   </div>
+   <div class="search">
+      <i class="fas fa-search" id="search-icon"></i>
+      <input type="text" id="mySearch" placeholder="Search for a series.." onkeyup="SearchOperationSerieses()">
+   </div>
+   <div class="all-serieses">
+      <div class="series" id="aliceinborderland">
+         <a href="serieses/aliceinborderland.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_aliceinborderland.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>ALICE IN BORDERLAND</div>
+            </div>
+         </a>
       </div>
-      <div class="notfound" id="notfound">THIS SERIES IS NOT FOUND</div>
-      <script src="https://u...content-available-to-author-only...g.com/aos@next/dist/aos.js"></script>
-    <script>
+      <div class="series" id="annewithane">
+         <a href="serieses/annewithane.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_annewithane.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>ANNE WITH AN E</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="arrow">
+         <a href="serieses/arrow.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_arrow.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>ARROW</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="barbarians">
+         <a href="serieses/barbarians.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_barbarians.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>BARBARIANS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="clickbait">
+         <a href="serieses/clickbait.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_clickbait.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>CLICK BAIT</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="controlz">
+         <a href="serieses/controlz.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_controlz.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>CONTROL Z</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="cursed">
+         <a href="serieses/cursed.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_cursed.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>CURSED</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="dark">
+         <a href="serieses/dark.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_dark.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>DARK</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="deadlyclass">
+         <a href="serieses/deadlyclass.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_deadlyclass.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>DEADLY CLASS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="frontier">
+         <a href="serieses/frontier.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_frontier.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>FRONTIER</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="lostinspace">
+         <a href="serieses/lostinspace.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_lostinspace.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>LOST IN SPACE</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="love101">
+         <a href="serieses/love101.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_love101.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>LOVE 101</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="moneyheist">
+         <a href="serieses/moneyheist.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_moneyheist.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>MONEY HEIST</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="mrrobot">
+         <a href="serieses/mrrobot.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_mrrobot.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>MR ROBOT</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="paranormal">
+         <a href="serieses/paranormal.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_paranormal.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>PARANORMAL</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="peakyblinders">
+         <a href="serieses/peakyblinders.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_peakyblinders.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>PEAKY BLINDERS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="queenofthesouth">
+         <a href="serieses/queenofthesouth.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_queenofthesouth.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>QUEEN OF THE SOUTH</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="resurrectionertugrul">
+         <a href="serieses/resurrectionertugrul.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_resurrectionertugrul.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>RESURRECTION ERTUGRUL</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="shadowandbone">
+         <a href="serieses/shadowandbone.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_shadowandbone.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SHADOW AND BONE</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="sherlock">
+         <a href="serieses/sherlock.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_sherlock.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SHERLOCK</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="shooter">
+         <a href="serieses/shooter.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_shooter.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SHOOTER</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="snowpiercer">
+         <a href="serieses/snowpiercer.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_snowpiercer.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SNOWPIERCER</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="squidgame">
+         <a href="serieses/squidgame.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_squidgame.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SQUID GAME</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="strangerthings">
+         <a href="serieses/strangerthings.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_strangerthings.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>STRANGER THINGS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="sweettooth">
+         <a href="serieses/sweettooth.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_sweettooth.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>SWEET TOOTH</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thealist">
+         <a href="serieses/thealist.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thealist.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE A LIST</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="theblacklist">
+         <a href="serieses/theblacklist.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_theblacklist.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE BLACK LIST</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thecrown">
+         <a href="serieses/thecrown.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thecrown.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE CROWN</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thegooddoctor">
+         <a href="serieses/thegooddoctor.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thegooddoctor.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE GOOD DOCTOR</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thehundred">
+         <a href="serieses/thehundred.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thehundred.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE HUNDRED</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thelastkingdom">
+         <a href="serieses/thelastkingdom.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thelastkingdom.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE LAST KINGDOM</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="theoriginals">
+         <a href="serieses/theoriginals.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_theoriginals.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE ORIGINALS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thequeensgambit">
+         <a href="serieses/thequeensgambit.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thequeen'sgambit.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE QUEEN'S GAMBIT</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="therain">
+         <a href="serieses/therain.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_therain.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE RAIN</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thesociety">
+         <a href="serieses/thesociety.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thesociety.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE SOCIETY</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thewalkingdead">
+         <a href="serieses/thewalkingdead.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_thewalkingdead.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE WALKING DEAD</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="titans">
+         <a href="serieses/titans.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_titans.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>TITANS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="vikings">
+         <a href="serieses/vikings.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_vikings.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>VIKINGS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="you">
+         <a href="serieses/you.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_you.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>YOU</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="znation">
+         <a href="serieses/znation.html">
+            <div class="poster">
+               <img src="../imgs/Series-Posters/series_znation.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>Z NATION</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="breakingbad">
+         <a href="serieses/breakingbad.html">
+            <div class="poster">
+               <img src="../imgs/series_breakingbad.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>BREAKING BAD</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="brooklynninenine">
+         <a href="serieses/brooklynninenine.html">
+            <div class="poster">
+               <img src="../imgs/series_brooklynninenine.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>BROOKLYNN NINE-NINE</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="emilyinparis">
+         <a href="serieses/emilyinparis.html">
+            <div class="poster">
+               <img src="../imgs/series_emilyinparis.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>EMILY IN PARIS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="friends">
+         <a href="serieses/friends.html">
+            <div class="poster">
+               <img src="../imgs/series_friends.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>FRIENDS</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="gameofthrones">
+         <a href="serieses/gameofthrones.html">
+            <div class="poster">
+               <img src="../imgs/series_gameofthrones.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>GAME OF THRONES</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="lockeandkey">
+         <a href="serieses/lockeandkey.html">
+            <div class="poster">
+               <img src="../imgs/series_lockeandkey.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>LOCKE AND KEY</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="loki">
+         <a href="serieses/loki.html">
+            <div class="poster">
+               <img src="../imgs/series_loki.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>LOKI</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="lupin">
+         <a href="serieses/lupin.html">
+            <div class="poster">
+               <img src="../imgs/series_lupin.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>LUPIN</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="prisonbreak">
+         <a href="serieses/prisonbreak.html">
+            <div class="poster">
+               <img src="../imgs/series_prisonbreak.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>PRISON BREAK</div>
+            </div>
+         </a>
+      </div>
+      <div class="series" id="thewitcher">
+         <a href="serieses/thewitcher.html">
+            <div class="poster">
+               <img src="../imgs/series_thewitcher.png" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+            </div>
+            <div class="name">
+               <div>THE WITCHER</div>
+            </div>
+         </a>
+      </div>
+   </div>
+   <div class="notfound" id="notfound">THIS SERIES IS NOT FOUND</div>
+   <script src="https://u...content-available-to-author-only...g.com/aos@next/dist/aos.js"></script>
+   <script>
       AOS.init();
-    </script>
-    <script src="../js/serieses.js"></script>
-    </body>
+   </script>
+   <script src="../js/serieses.js"></script>
+</body>
+
 </html>
