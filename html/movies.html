@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>VIDCASTER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon Icon -->
+  <link rel="shortcut icon" type="image/png" href="../imgs/favicon.png">
+  <!-- css sheets -->
+  <link rel="stylesheet" href="../css/movies.css" />
+  <!-- normalize file -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- google fonts library -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap" rel="stylesheet">
+  <!-- JQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">VIDCASTER</a>
+      </div>
+      <div class="menu">
+        <div><a href="index.html">HOME</a></div>
+        <div><a href="movies.html">MOVIES</a></div>
+        <div><a href="serieses.html">TV SHOWS</a></div>
+      </div>
+    </div>
+    <div class="search">
+      <i class="fas fa-search" id="search-icon"></i>
+      <input type="text" id="mySearch" placeholder="Search for a movie.." onkeyup="SearchOperation()">
+    </div>
+    <div class="all-movies">
+      <div class="films" id="alaaddin">
+         <a href="movies/alaaddin.html">
+            <div class="poster">
+              <img src="../imgs/Movies-Posters/movie_alaaddin.jpg" alt="">
+              <div class="play-button"><i class="far fa-play-circle"></i></div>
+              <div class="watch-label">Watch</div>
+              </div>
+            <div class="name">
+               <div>ALADDIN</div>
+            </div>
+         </a>
+      </div>
+      <div class="films" id="annabelle">
+         <a href="movies/annabelle.html">
+            <div class="poster"><img src="../imgs/Movies-Posters/movie_annabelle.jpg" alt="">
+              <div class="play-button"><i class="far fa-play-circle"></i></div>
+              <div class="watch-label">Watch</div>
+
+              </div>
+            <div class="name">
+               <div>ANNABELLE</div>
+            </div>
+         </a>
+      </div>
+      <div class="films" id="aquaman">
+         <a href="movies/aquaman.html">
+            <div class="poster"><img src="../imgs/Movies-Posters/movie_aquaman.jpg" alt="">
+              <div class="play-button"><i class="far fa-play-circle"></i></div>
+              <div class="watch-label">Watch</div>
+              </div>
+            <div class="name">
+               <div>AQUAMAN</div>
+            </div>
+         </a>
+      </div>
+        <div class="films" id="13goingon30">
+            <a href="movies/13goingon30.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_13goingon30.jpg"alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>13 GOING ON 30</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="16wishes">
+            <a href="movies/16wishes.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_16wishes.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>16 WISHES</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="47metersdown">
+            <a href="movies/47metersdown.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_47metersdown.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>47 METERS DOWN</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="6underground">
+            <a href="movies/6underground.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_6underground.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>6 UNDERGROUND</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="avengersendgame">
+           <a href="movies/avengersendgame.html">
+           <div class="poster">
+            <img src="../imgs/movie_avengersendgame.png" alt="">
+            <div class="play-button"><i class="far fa-play-circle"></i></div>
+            <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>AVENGERS ENDGAME</div>
+           </div>
+         </a>
+        </div>
+         <div class="films" id="armyofthedead">
+            <a href="movies/armyofthedead.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_armyofthedead.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>AMRY OF THE DEAD</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="cindrella">
+           <a href="movies/cindrella.html">
+           <div class="poster">
+             <img src="../imgs/movie_cindrella.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>CINDRELLA</div>
+           </div>
+         </a>
+        </div>
+         <div class="films" id="beautyandthebeast">
+            <a href="movies/beautyandthebeast.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_beautyandthebeast.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>BEAUTY AND THE BEAST</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="darkwaters">
+            <a href="movies/darkwaters.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_darkwaters.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>DARK WATERS</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="godzilla">
+            <a href="movies/godzilla.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_godzilla.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>GODZILLA</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="holidate">
+            <a href="movies/holidate.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_holidate.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>HOLIDATE</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="venom">
+           <a href="movies/venom.html">
+           <div class="poster">
+             <img src="../imgs/movie_venom.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>VENOM</div>
+           </div>
+         </a>
+        </div>
+         <div class="films" id="homealone">
+            <a href="movies/homealone.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_homealone.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>HOME ALONE</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="howtoloseaguyin10days">
+            <a href="movies/howtoloseaguyin10days.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_howtoloseaguyin10days.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>HOW TO LOSE A GUY IN 10 DAYS</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="it">
+            <a href="movies/it.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_it.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>IT</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="joker">
+            <a href="movies/joker.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_joker.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>JOKER</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="thetomorrowwar">
+           <a href="movies/thetomorrowwar.html">
+           <div class="poster"><img src="../imgs/movie_thetomorrowwar.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>THE TOMORROW WAR</div>
+           </div>
+         </a>
+        </div>
+         <div class="films" id="jumanji">
+            <a href="movies/jumanji.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_jumanji.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>JUMANJI</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="justifysociety">
+            <a href="movies/justifysociety.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_justifysociety.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>JUSTIFY SOCIETY</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="karatekid">
+            <a href="movies/karatekid.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_karatekid.jpg" alt="">
+               <div class="play-button"><i class="far fa-play-circle"></i></div>
+               <div class="watch-label">Watch</div>
+             </div>
+               <div class="name">
+                  <div>KARATE KID</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="likeaboss">
+            <a href="movies/likeaboss.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_likaaboss.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>LIKE A BOSS</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="callofthewild">
+           <a href="movies/callofthewild.html">
+           <div class="poster"><img src="../imgs/movie_callofthewild.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>CALL OF THE WILD</div>
+           </div>
+         </a>
+        </div>
+         <div class="films" id="mebeforeyou">
+            <a href="movies/mebeforeyou.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_mebeforeyou.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>ME BEFORE YOU</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="monsterhunter">
+            <a href="movies/monsterhunter.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_monsterhunter.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>MONSTER HUNTER</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="murdermystery">
+            <a href="movies/murdermystery.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_murdermystery.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>MURDER MYSTERY</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="ocean8">
+            <a href="movies/ocean8.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_ocean8.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>OCEAN 8</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="wrathofman">
+           <a href="movies/wrathofman.html">
+           <div class="poster"><img src="../imgs/movie_wrathofman.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>WRATH OF MAN</div>
+           </div>
+          </a>
+         </div>
+         <div class="films" id="outsidethewire">
+            <a href="movies/outsidethewire.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_outsidethewire.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>OUTSIDE THE WIRE</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="someonegreat">
+            <a href="movies/someonegreat.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_someonegreat.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>SOMEONE GREAT</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="spiderman">
+            <a href="movies/spiderman.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_spiderman.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>SPIDERMAN</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="tallgirl">
+            <a href="movies/tallgirl.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_tallgirl.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>TALL GIRL</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="theplatform">
+           <a href="movies/theplatform.html">
+           <div class="poster"><img src="../imgs/movie_theplatform.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>THE PLATFORM</div>
+           </div>
+         </a>
+         </div>
+         <div class="films" id="theconjuring">
+            <a href="movies/theconjuring.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_theconjuring.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE CONJURING</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="thedarktower">
+            <a href="movies/thedarktower.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_thedarktowers.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE DARK TOWER</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="thefaultinourstars">
+            <a href="movies/thefaultinourstars.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_thefaultinourstars.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE FAULT IN OUR STARS</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="hachiko">
+           <a href="movies/hachiko.html">
+           <div class="poster"><img src="../imgs/movie_hachiko.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>HACHIKO</div>
+           </div>
+         </a>
+         </div>
+         <div class="films" id="thegreathack">
+            <a href="movies/thegreathack.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_thegreathacker.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE GREAT HACK</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="loverosie">
+           <a href="movies/loverosie.html">
+           <div class="poster"><img src="../imgs/movie_loverosie.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>LOVE, ROSIE</div>
+           </div>
+         </a>
+         </div>
+         <div class="films" id="thekissingbooth">
+            <a href="movies/thekissingbooth.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_thekissingbooth.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE KISSING BOOTH</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="themeg">
+            <a href="movies/themeg.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_themeg.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE MEG</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="theperfectdate">
+            <a href="movies/theperfectdate.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_theperfectdate.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE PERFECT DATE</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="theprincessswitch">
+            <a href="movies/theprincessswitch.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_theprincessswitch.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE PRINCESS SWITCH</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="freeguy">
+           <a href="movies/freeguy.html">
+           <div class="poster"><img src="../imgs/movie_freeguy.png" alt="">
+             <div class="play-button"><i class="far fa-play-circle"></i></div>
+             <div class="watch-label">Watch</div>
+           </div>
+           <div class="name">
+             <div>FREE GUY</div>
+           </div>
+         </a>
+         </div>
+         <div class="films" id="thewarwithgrandpa">
+            <a href="movies/thewarwithgrandpa.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_thewarwithgrandpa.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>THE WAR WITH GRANDPA</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="toalltheboyivelovedbefore">
+            <a href="movies/toalltheboyivelovedbefore.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_toalltheboysivelovedbefore.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>TO ALL THE BOYS I'VE LOVED BEFORE</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="transformers">
+            <a href="movies/transformers.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_transformers.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>TRANSFORMERS</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="war">
+            <a href="movies/war.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_war.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>WAR</div>
+               </div>
+            </a>
+         </div>
+         <div class="films" id="wonder">
+            <a href="movies/wonder.html">
+               <div class="poster"><img src="../imgs/Movies-Posters/movie_wonder.jpg" alt="">
+                 <div class="play-button"><i class="far fa-play-circle"></i></div>
+                 <div class="watch-label">Watch</div>
+                 </div>
+               <div class="name">
+                  <div>WONDER</div>
+               </div>
+            </a>
+         </div>
+    </div>
+  </div>
+  <div class="notfound" id="notfound">THIS FILM IS NOT FOUND</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/movies.js"></script>
+  </body>
+</html>

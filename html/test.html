@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..">
+    <div id="endgame">
+      endgame
+    </div>
+    <div id="loki">
+      loki
+    </div>
+    <div id="freeguy">
+      freeguy
+    </div>
+    <div id="loverosie">
+      love, rosie
+    </div>
+    <div id="outerbanks">
+      outerbanks
+    </div>
+    <script>
+      function myFunction() {
+        const films = ['endgame', 'loki', 'free-guy', 'love, rosie', 'outerbanks'];
+        var arrSize = films.length;
+        var input = document.getElementById("mySearch").value.toUpperCase();
+        for (var i = 0; i < arrSize; i++) {
+          var currentFilm = films[i];
+          if (currentFilm.toUpperCase().indexOf(input) == -1) {
+            var formatedFilm = currentFilm.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+            document.getElementById(formatedFilm).style.display="none";
+          }
+          else {
+            var formatedFilm = currentFilm.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+            document.getElementById(formatedFilm).style.display="";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
